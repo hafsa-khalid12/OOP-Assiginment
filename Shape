@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+class Shape{
+	protected:
+	int length,width,height;
+	public:
+	Shape(int length = 10, int width = 20, int height = 30)
+	 : length{length}, width{width}, height{height}
+  {
+  	
+	}
+};
+class Rectangle:public Shape{
+	public:
+	float area (){
+		return length*width;
+	}
+	void printinfo(){
+		cout<<"area of rectangle is : "<<area()<<endl;
+	}
+};
+
+	class Triangle:public Shape{
+	public:
+	float parameter (){
+		return length+width+height;
+	}
+	void printinfo(){
+		cout<<"parameter of triangle is : "<<parameter()<<endl;
+	}
+	
+};
+	
+	class Circle:public Shape
+	{
+	public:
+	float area()
+	{
+		return (3.14* length * length);
+	}
+	void printinfo()
+	{
+		cout<<"area of circle is : "<<area()<<endl;
+	}
+	};
+
+int main (){
+	
+ int length, width, height;
+
+    Shape shape(length, width, height);
+    
+	
+    
+      Rectangle rectangle;
+      rectangle.printinfo();
+     
+     Triangle triangle;
+     triangle.printinfo();
+     
+     Circle circle;
+     circle.printinfo();
+     }
