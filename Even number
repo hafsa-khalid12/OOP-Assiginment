@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+class Even {
+	private :
+	 int num;
+	public:
+	
+	Even (int num=0)
+	:num{num}
+	{
+		cout<<"called for constructor\n";
+	}
+	void setdata ( int num);
+	bool calculateeven ();
+	 void display ();
+	 };
+	 
+	 
+	 	void  Even::setdata ( int num){
+		this->num= num;
+	}
+	bool Even:: calculateeven (){
+		return ( num%2==0);
+	}
+	 void Even::display (){
+	 	int num;
+	 	if(calculateeven()){
+	 		cout<<"number is even";
+	 	}
+	 	else  {
+	 	cout <<"number is not even";
+	 }
+	 }
+	 int main(){
+	 	Even even;
+	 	
+	 	int num;
+	 	cout<<"enter the number";
+	 	cin>>num;
+	 	
+	 	even.setdata(num);
+	 	even.display();
+	 }
