@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class Prime {
+    private:
+    int num;
+    public:
+    void setdata(int num) {
+        this->num=num;
+    }
+    bool showPrime(int number) {
+        bool is_prime=true;
+        if (number <= 1) {
+            is_prime= false;
+        }
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                is_prime=false;
+            }
+        }
+            if (is_prime)
+    {
+      cout << "Number is Prime." << endl;
+    }
+    else
+    {
+      cout << "Number is Composite." << endl;
+    }
+    }
+};
+int main (){
+	
+	Prime prime;
+	
+	int num;
+	cout<<"enter the number";
+	cin>>num;
+	
+	prime.setdata(num);
+	prime.showPrime(num);
+}
