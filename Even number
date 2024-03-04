@@ -3,7 +3,7 @@ using namespace std;
 
 class Even {
 	private :
-	 int num;
+	int num;
 	public:
 	
 	Even (int num=0)
@@ -12,15 +12,15 @@ class Even {
 		cout<<"called for constructor\n";
 	}
 	void setdata ( int num);
-	bool calculateEven ();
-	 void display ();
+	int calculateEven ();
+	void display ();
 	 };
 	 
 	 
 	 	void  Even::setdata ( int num){
 		this->num= num;
 	}
-	bool Even::calculateEven (){
+	int Even::calculateEven (){
 		return ( num%2==0);
 	}
 	 void Even::display (){
