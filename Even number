@@ -12,7 +12,7 @@ class Even {
 		cout<<"called for constructor\n";
 	}
 	void setdata ( int num);
-	bool calculateeven ();
+	int calculateeven ();
 	 void display ();
 	 };
 	 
@@ -20,12 +20,12 @@ class Even {
 	 	void  Even::setdata ( int num){
 		this->num= num;
 	}
-	bool Even:: calculateeven (){
+	int Even :: calculateEven (){
 		return ( num%2==0);
 	}
 	 void Even::display (){
 	 	int num;
-	 	if(calculateeven()){
+	 	if(calculateEven()){
 	 		cout<<"number is even";
 	 	}
 	 	else  {
