@@ -12,7 +12,7 @@ class Even {
 		cout<<"called for constructor\n";
 	}
 	void setdata ( int num);
-	bool calculateeven ();
+	bool calculateEven ();
 	 void display ();
 	 };
 	 
