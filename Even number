@@ -20,12 +20,12 @@ class Even {
 	 	void  Even::setdata ( int num){
 		this->num= num;
 	}
-	bool Even:: calculateeven (){
+	bool Even::calculateEven (){
 		return ( num%2==0);
 	}
 	 void Even::display (){
 	 	int num;
-	 	if(calculateeven()){
+	 	if(calculateEven()){
 	 		cout<<"number is even";
 	 	}
 	 	else  {
